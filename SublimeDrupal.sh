@@ -266,6 +266,16 @@ else
   cd ..
 fi
 
+# JSLint
+if [ ! -d "JSLint" ]; then
+ git clone git@github.com:darrenderidder/Sublime-JSLint.git JSLint;
+else
+  echo "Updating plugin JSLint";
+  cd "JSLint"
+  git pull origin master
+  cd ..
+fi
+
 #Specific plugings for MAC
 if [ $os != 'Linux' ]; then
   # MacTerminal
@@ -305,10 +315,10 @@ fi
 
 cd "Theme - Soda"
 if [ ! -f "colour-schemes.zip" ]; then
- wget http://buymeasoda.github.com/soda-theme/extras/colour-schemes.zip;
+ curl -OLk https://buymeasoda.github.com/soda-theme/extras/colour-schemes.zip;
 else
  rm colour-schemes.zip
- wget http://buymeasoda.github.com/soda-theme/extras/colour-schemes.zip
+ curl -OLk https://buymeasoda.github.com/soda-theme/extras/colour-schemes.zip
 fi
 yes | unzip colour-schemes.zip
 
