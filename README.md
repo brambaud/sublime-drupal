@@ -45,6 +45,22 @@ Script to setup a Sublime Text 2 editor for Drupal development (Mac & Linux)
   <li>./SublimeDrupal.sh</li>
 </ul>
 
+<h2>How to update</h2>
+
+  <p>If you already have this script installed you just need run the following command to get the latest version.
+
+  <ul>
+    <li>git pull origin master</li>
+  </ul>
+
+  After complete this command you just need re-execute the script with the following command.
+
+  <ul>
+    <li>./SublimeDrupal.sh</li>
+  </ul>
+
+  <p>The command above will include new plugins and update your current plugins, if you have custom settings the script always create backups and you can use to restore your custom settings.</p>
+
 <h3>Installation Notes</h3>
 
 <h4>Drupal Coding Standard</h4>
