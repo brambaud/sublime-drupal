@@ -68,10 +68,11 @@ Script to setup a Sublime Text 2 editor for Drupal development (Mac & Linux)
   <li>Super + Shift + Option + k: Jump to previous Git modification</li>
   <li>Super + Shift + Option + j: Jump to next Git modification</li>
   <li>Super + Shift + 1: Reveal file in SideBar</li>
-  <li>* CTRL + Command + t</li>
+  <li>* CTRL + Command + t: Open a Termimal or iTerm2</li>
 
 </ul>
+<p><strong> * </strong>= Only available for MacOSX</p>
 
-<p>Super Key stands for Command in Mac and Windows Key in Windows</p>
+<p>Super Key stands for Command in Mac, Windows Key in Windows and CTRL in Linux</p>
 
 <p>Orginally forked from <a href="https://github.com/phase2/sublime-drupal/">https://github.com/phase2/sublime-drupal/</a></p>
