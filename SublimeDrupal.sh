@@ -65,13 +65,24 @@ ln -fs "$st2Dir"DrupalSublimeConfig/SublimeLinter.sublime-settings "$st2UserDir"
 
 # Back up old GitGutter settings file
 if [ -f "$st2UserDir"GitGutter.sublime-settings ]; then
-  echo "Backing up previous version of SGitGutter.sublime-settings...";
+  echo "Backing up previous version of GitGutter.sublime-settings...";
   sudo cp -Lf "$st2UserDir"GitGutter.sublime-settings "$st2UserDir"GitGutter.sublime-settings.bak;
 fi
 
 # Link up new settings file
 echo "Linking up settings GitGutter.sublime-settings..."
 ln -fs "$st2Dir"DrupalSublimeConfig/GitGutter.sublime-settings "$st2UserDir"GitGutter.sublime-settings;
+
+# Back up old Highlighter settings file
+if [ -f "$st2UserDir"Highlighter.sublime-settings ]; then
+  echo "Backing up previous version of Highlighter.sublime-settings...";
+  sudo cp -Lf "$st2UserDir"Highlighter.sublime-settings "$st2UserDir"Highlighter.sublime-settings.bak;
+fi
+
+# Link up new settings file
+echo "Linking up settings Highlighter.sublime-settings..."
+ln -fs "$st2Dir"DrupalSublimeConfig/Highlighter.sublime-settings "$st2UserDir"Highlighter.sublime-settings;
+
 
 # Clone all the plugins!
 if [ ! -d "PACKAGE CONTROL" ]; then
@@ -89,6 +100,16 @@ if [ ! -d "BracketHighlighter" ]; then
  else
   echo "Updating plugin BracketHighlighter";
   cd "BracketHighlighter"
+  git pull origin master
+  cd ..
+fi
+
+# Highlighter
+if [ ! -d "Highlighter" ]; then
+ git clone git@github.com:bluegray/Highlighter.git Highlighter;
+ else
+  echo "Updating plugin Highlighter";
+  cd "Highlighter"
   git pull origin master
   cd ..
 fi

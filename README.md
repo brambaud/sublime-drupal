@@ -13,6 +13,7 @@ Script to setup a Sublime Text 2 editor for Drupal development (Mac & Linux)
   <li><a href="https://github.com/jisaacks/GitGutter">Git Gutter</a></li>
   <li><a href="https://github.com/SublimeText/SideBarGit">SideBarGit</a></li>
   <li><a href="http://github.com/facelessuser/BracketHighlighter">Bracket Highlighter</a></li>
+  <li><a href="https://github.com/bluegray/Highlighter">Highlighter</a></li>
   <li><a href="https://github.com/spadgos/sublime-jsdocs">DocBlockr</a></li>
   <li><a href="git://github.com/niklas-heer/sublime-css-colors.git">LiveCSS</a></li>
   <li><a href="http://github.com/BrianGilbert/Sublime-Text-2-Goto-Drupal-API">Goto Drupal API</a></li>
@@ -51,6 +52,9 @@ Script to setup a Sublime Text 2 editor for Drupal development (Mac & Linux)
 
 <h4>Drupal Auto Compelte</h4>
   <p>To use the  Drupal Auto Complete, you need to create a SublimeProject and save the project definition at the drupal document root where index.php is located</p>
+
+<h4>Highlighter</h4>
+  <p>Automatic highlight of any "non-ASCII (code point > 128) characters"</p>
 
 <h2>Key Binding</h2>
 
