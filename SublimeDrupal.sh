@@ -114,6 +114,26 @@ if [ ! -d "Highlighter" ]; then
   cd ..
 fi
 
+# ApplySyntax
+if [ ! -d "ApplySyntax" ]; then
+ git clone git@github.com:facelessuser/ApplySyntax.git ApplySyntax;
+ else
+  echo "Updating plugin Apply Syntax";
+  cd "ApplySyntax"
+  git pull origin master
+  cd ..
+fi
+
+# Pretty YAML
+if [ ! -d "PrettyYAML" ]; then
+ git clone git@github.com:aukaost/SublimePrettyYAML.git PrettyYAML;
+ else
+  echo "Updating plugin PrettyYAML";
+  cd "PrettyYAML"
+  git pull origin master
+  cd ..
+fi
+
 # DocBlockr
 if [ ! -d "DocBlockr" ]; then
  git clone https://github.com/spadgos/sublime-jsdocs.git DocBlockr;
