@@ -17,7 +17,7 @@ Script to setup a Sublime Text 2 editor for Drupal development (Mac & Linux)
   <li><a href="https://github.com/aukaost/SublimePrettyYAML">PrettyYAML</a></li>
   <li><a href="https://github.com/facelessuser/ApplySyntax">Apply Syntax</a></li>
   <li><a href="https://github.com/spadgos/sublime-jsdocs">DocBlockr</a></li>
-  <li><a href="git://github.com/niklas-heer/sublime-css-colors.git">LiveCSS</a></li>
+  <li><a href="https://github.com/niklas-heer/sublime-css-colors">LiveCSS</a></li>
   <li><a href="http://github.com/BrianGilbert/Sublime-Text-2-Goto-Drupal-API">Goto Drupal API</a></li>
   <li><a href="https://github.com/rypit/DrupalCodingStandard">Drupal Coding Standard</a></li>
   <li><a href="http://github.com/juhasz/drupal_sublime-snippets">Drupal Sublime Snippets</a></li>
