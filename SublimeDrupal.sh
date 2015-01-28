@@ -144,18 +144,6 @@ else
   cd ..
 fi
 
-# LiveCSS
-if [ ! -d "LiveCSS" ]; then
- git clone https://github.com/niklas-heer/sublime-css-colors.git LiveCSS;
-else
-  echo "Updating plugin LiveCSS";
-  cd "LiveCSS"
-  #support for previous installation the project was moved from https://github.com/a-sk/livecss
-  git remote set-url origin git://github.com/niklas-heer/sublime-css-colors.git
-  git pull origin master
-  cd ..
-fi
-
 # GotoDrupalAPI
 if [ ! -d "Sublime-Text-2-Goto-Drupal-API" ]; then
  git clone https://github.com/BrianGilbert/Sublime-Text-2-Goto-Drupal-API.git;
