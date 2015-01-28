@@ -106,7 +106,7 @@ fi
 
 # Highlighter
 if [ ! -d "Highlighter" ]; then
- git clone git@github.com:bluegray/Highlighter.git Highlighter;
+ git clone https://github.com/bluegray/Highlighter.git Highlighter;
  else
   echo "Updating plugin Highlighter";
   cd "Highlighter"
@@ -116,7 +116,7 @@ fi
 
 # ApplySyntax
 if [ ! -d "ApplySyntax" ]; then
- git clone git@github.com:facelessuser/ApplySyntax.git ApplySyntax;
+ git clone https://github.com/facelessuser/ApplySyntax.git ApplySyntax;
  else
   echo "Updating plugin Apply Syntax";
   cd "ApplySyntax"
@@ -126,7 +126,7 @@ fi
 
 # Pretty YAML
 if [ ! -d "PrettyYAML" ]; then
- git clone git@github.com:aukaost/SublimePrettyYAML.git PrettyYAML;
+ git clone https://github.com/aukaost/SublimePrettyYAML.git PrettyYAML;
  else
   echo "Updating plugin PrettyYAML";
   cd "PrettyYAML"
@@ -140,18 +140,6 @@ if [ ! -d "DocBlockr" ]; then
 else
   echo "Updating plugin DocBlockr";
   cd "DocBlockr"
-  git pull origin master
-  cd ..
-fi
-
-# LiveCSS
-if [ ! -d "LiveCSS" ]; then
- git clone git://github.com/niklas-heer/sublime-css-colors.git LiveCSS;
-else
-  echo "Updating plugin LiveCSS";
-  cd "LiveCSS"
-  #support for previous installation the project was moved from https://github.com/a-sk/livecss
-  git remote set-url origin git://github.com/niklas-heer/sublime-css-colors.git
   git pull origin master
   cd ..
 fi
@@ -228,7 +216,7 @@ fi
 
 # Drupal AutoComplete
 if [ ! -d "st2-drupal-autocomplete" ]; then
- git clone git://github.com/tanc/st2-drupal-autocomplete.git;
+ git clone https://github.com/tanc/st2-drupal-autocomplete.git;
 else
   echo "Updating plugin st2-drupal-autocomplete";
   cd "st2-drupal-autocomplete"
@@ -259,7 +247,7 @@ fi
 
 # GitGutter
 if [ ! -d "GitGutter" ]; then
- git clone git://github.com/jisaacks/GitGutter.git;
+ git clone https://github.com/jisaacks/GitGutter.git;
 else
   echo "Updating plugin GitGutter";
   cd "GitGutter"
@@ -269,7 +257,7 @@ fi
 
 # SideBarGit
 if [ ! -d "SideBarGit" ]; then
- git clone git://github.com/SublimeText/SideBarGit.git;
+ git clone https://github.com/SublimeText/SideBarGit.git;
 else
   echo "Updating plugin SideBarGit";
   cd "SideBarGit"
@@ -279,7 +267,7 @@ fi
 
 # SublimeLinter
 if [ ! -d "SublimeLinter" ]; then
- git clone git://github.com/SublimeLinter/SublimeLinter.git
+ git clone https://github.com/SublimeLinter/SublimeLinter.git
 else
   echo "Updating plugin SublimeLinter";
   cd "SublimeLinter"
@@ -289,7 +277,7 @@ fi
 
 # SASS
 if [ ! -d "SASS" ]; then
- git clone git@github.com:nathos/sass-textmate-bundle.git SASS;
+ git clone ghttps://github.com/nathos/sass-textmate-bundle.git SASS;
 else
   echo "Updating plugin SASS";
   cd "SASS"
@@ -299,7 +287,7 @@ fi
 
 # CssSnippets
 if [ ! -d "CssSnippets" ]; then
- git clone git@github.com:P233/Emmet-Css-Snippets-for-Sublime-Text-2.git CssSnippets;
+ git clone https://github.com/P233/Emmet-Css-Snippets-for-Sublime-Text-2.git CssSnippets;
 else
   echo "Updating plugin CssSnippets";
   cd "CssSnippets"
@@ -309,7 +297,7 @@ fi
 
 # JSLint
 if [ ! -d "JSLint" ]; then
- git clone git@github.com:darrenderidder/Sublime-JSLint.git JSLint;
+ git clone https://github.com/darrenderidder/Sublime-JSLint.git JSLint;
 else
   echo "Updating plugin JSLint";
   cd "JSLint"
