@@ -1,7 +1,7 @@
 sublime-drupal
 ==============
 
-Script to setup a Sublime Text 2 editor for Drupal development (Mac & Linux)
+Script to setup a Sublime Text 3 editor for Drupal development (Mac & Linux)
 
 <p>The installer include plugins and settings to configure the environment in order to speed up the Drupal Development process.</p>
 
@@ -40,7 +40,7 @@ Script to setup a Sublime Text 2 editor for Drupal development (Mac & Linux)
 <h2>How to install</h2>
 
 <ul>
-  <li>Install Sublime Text 2 from <a href="http://www.sublimetext.com">http://www.sublimetext.com</a></li>
+  <li>Install Sublime Text 3 from <a href="http://www.sublimetext.com">http://www.sublimetext.com</a></li>
   <li>git clone https://github.com/enzolutions/sublime-drupal</li>
   <li>cd sublime-drupal</li>
   <li>chmod +x SublimeDrupal.sh</li>

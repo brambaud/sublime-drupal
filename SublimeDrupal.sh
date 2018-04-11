@@ -7,10 +7,10 @@ phpcs=`which phpcs`;
 # ST2 Packages directory
 if [ $os = 'Linux' ]
 then
-  st2Dir=~/".config/sublime-text-2/Packages/"
+  st2Dir=~/".config/sublime-text-3/Packages/"
 else
   # Assume OSX
-  st2Dir=~/"Library/Application Support/Sublime Text 2/Packages/"
+  st2Dir=~/"Library/Application Support/Sublime Text 3/Packages/"
 fi
 
 # Navigate to Packages DirectoryCKAGE
@@ -25,7 +25,7 @@ st2Settings="$st2UserDir"Preferences.sublime-settings;
 
 # Default Preferences fork for enzo
 if [ ! -d "DrupalSublimeConfig" ]; then
- git clone https://github.com/enzolutions/drupal-sublime-config.git DrupalSublimeConfig;
+ git clone https://github.com/brambaud/drupal-sublime-config.git DrupalSublimeConfig;
 else
   echo "Updating plugin DrupalSublimeConfig";
   cd "DrupalSublimeConfig"
